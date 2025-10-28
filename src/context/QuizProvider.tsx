@@ -32,7 +32,7 @@ const QuizProvider = ({ children }: QuizProviderProps) => {
   useEffect(() => {
     setTimer(totalTime)
     setQuestions(quizQuestions)
-  }, [quizTopic])
+  }, [quizQuestions, totalTime]);
 
   const quizDetails = {
     totalQuestions,
